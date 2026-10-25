@@ -1,0 +1,135 @@
+# 📋 Fee Module — Complete User Guide
+### For the Fee Collector / Accountant
+
+---
+
+## 🖥️ How to Open the Fee Module
+
+1. Log in to the Admin Portal
+2. Click **"Fee"** in the left sidebar menu
+3. You will land on the **Students Fee Overview** page
+
+---
+
+## 📅 STEP 1 — Set Fee Amounts for Each Class (Do This First!)
+
+> [!IMPORTANT]
+> Do this **once at the start**. This sets the standard fee (Tuition, Library, Exam, etc.) for each class so you don't have to type it for every student.
+
+1. Click the **"⚙ Fee Settings"** button (top left)
+2. Select the class from the dropdown (e.g. *9th Biology*, *1st Year Pre-Medical*)
+3. Fill in:
+   - **Monthly Tuition Fee** — e.g. `3000`
+   - **Library / Lab Fee** — e.g. `200`
+   - **Paper Fund / Exam Fee** — e.g. `150`
+   - **Annual Fee**, **Transport Fee** (if applicable)
+4. Click **"💾 Save Defaults for [Class Name]"**
+5. Repeat for every class
+
+---
+
+## 📆 STEP 2 — Open Monthly Fee Records
+
+### Option A — Open This Month Only (Quick)
+1. Click **"📅 Open Month(s)"** button
+2. In the popup: keep **From Month** and **To Month** both as the current month
+3. Set **Apply to:** `All Classes (Whole College)`
+4. Click **✓ Generate Fee Records**
+
+### Option B — Open Multiple Past Months at Once (Backlog)
+Use this when you want to add January, February, March records all at once.
+
+1. Click **"📅 Open Month(s)"**
+2. Set **From Month:** `January 2026`
+3. Set **To Month:** `March 2026` (or whatever the current month is)
+4. Set class to `All Classes` or a specific class
+5. *(Optional)* If those months were **already paid**, check: ✅ **"Mark all as already Paid"**
+6. *(Optional)* If you want a **custom fee amount** (different from defaults), check: ✅ **"Enter custom fee amounts"** and type in the amounts
+7. Click **✓ Generate Fee Records** (or **✓ Generate & Mark Paid**)
+
+> [!TIP]
+> Already-existing months are skipped automatically — you won't create duplicates.
+
+---
+
+## 💰 STEP 3 — Receive a Payment from a Student
+
+1. Find the student in the table (use the search box to type their name or ID)
+2. Click on their **row** — a panel opens on the right side
+3. At the top of the panel you'll see a **"Viewing Month"** dropdown
+   - Use this to switch between **January, February, March**, etc.
+   - Each month shows: ✓ Paid, ✗ Unpaid, or ◑ Partial
+4. Check the fee breakdown is correct
+5. Click the green **"Receive Payment"** button
+6. The student's status will change to **Paid ✓** immediately
+
+> [!NOTE]
+> If you need to change the fee amount before marking paid, click **"Edit"** first, adjust the numbers, click **"Save Fees"**, then click **"Receive Payment"**.
+
+---
+
+## 🖨️ STEP 4 — Print a Challan / Receipt
+
+After marking a student as paid:
+1. Click on the student's row
+2. Click the blue **"Print Invoice"** button in the right panel
+3. A challan will open in a new window with a **✓ PAID** stamp
+4. Your browser's print dialog will open automatically
+5. Print and hand to the student
+
+---
+
+## 📊 STEP 5 — Print a Class Fee Report
+
+Use this to print a full list of all students in a class with their payment status.
+
+1. Click **"📊 Print Report"** button (top right of the page)
+2. A bar appears below — select:
+   - **Class** (or *All Classes*)
+   - **Month** (e.g. *March 2026*)
+3. Click **"🖨️ Generate Report"**
+4. A printable table opens showing every student, amount due, amount paid, and status
+
+---
+
+## ✅ STEP 6 — Mark Entire Class as Paid (Bulk Action)
+
+When a whole class has paid and you want to mark them all at once:
+
+1. Click **"✓ Bulk Actions"** button (top right)
+2. A green bar appears — select:
+   - **Class** (or *All Classes*)
+   - **Month** (e.g. *February 2026*)
+3. Click **"✓ Mark All Paid"**
+4. Confirm the popup — all students in that class/month are marked Paid instantly
+
+---
+
+## ⚠️ Adding Old/Previous Unpaid Dues (Arrears)
+
+If a student owes money from a previous year or special charge:
+
+1. Click on the student's row
+2. Scroll down to **"Arrears Section"**
+3. Type the amount (e.g. `5000`)
+4. Click **"Add"**
+5. The arrear appears in their fee history as a separate unpaid entry
+
+---
+
+## 🔍 Finding Fee Defaulters
+
+Click the **"Defaulters"** tab in the student list — it automatically filters and shows only students with unpaid or partial fees.
+
+---
+
+## ❓ Common Questions
+
+| Question | Answer |
+|---|---|
+| I opened a month but all amounts show RS 0 | Go to **Fee Settings** and save the fee amounts for each class first, then re-open the month |
+| A student's status shows **"No Records"** | That student hasn't had a fee month opened yet. Click them and click **"+ Add Fee"** |
+| I marked wrong student as paid | Click on the student → the Receive Payment button is disabled when paid. Use **Bulk Actions → Reset All Unpaid** to reverse |
+| I want to see January's record not March's | Click the student → use the **"Viewing Month"** dropdown to switch months |
+| I can't see the Print button | The student must have at least one fee record. Open a month for them first |
+| Is data saved automatically? | ✅ Yes — every action saves to the database immediately |

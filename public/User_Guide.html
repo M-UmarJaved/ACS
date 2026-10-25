@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACS School Management System - Comprehensive User Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Outfit', sans-serif; line-height: 1.6; color: #1e293b; background: white; margin: 0; padding: 40px; max-width: 900px; margin: auto; }
+        h1, h2, h3, h4 { color: #0f172a; margin-top: 2.5rem; }
+        h1 { font-size: 2.5rem; text-align: center; border-bottom: 4px solid #2563eb; padding-bottom: 20px; font-weight: 800; }
+        h2 { font-size: 1.8rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; color: #1d4ed8; }
+        h3 { font-size: 1.4rem; color: #1e3a8a; }
+        h4 { font-size: 1.1rem; color: #334155; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px; }
+        .intro { background: #f8fafc; padding: 25px; border-left: 5px solid #3b82f6; font-size: 1.15rem; margin-bottom: 30px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }
+        .tip { background: #ecfdf5; border-left: 5px solid #10b981; padding: 15px 20px; margin: 20px 0; border-radius: 4px; box-shadow: 0 2px 4px rgb(0 0 0 / 0.05); }
+        .warning { background: #fef2f2; border-left: 5px solid #ef4444; padding: 15px 20px; margin: 20px 0; border-radius: 4px; }
+        p, li { font-size: 1.1rem; color: #334155; }
+        ul, ol { margin-bottom: 20px; padding-left: 25px; }
+        li { margin-bottom: 12px; }
+        .step { font-weight: 800; color: #2563eb; }
+        .btn { display: inline-block; padding: 12px 24px; background: #2563eb; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; margin: 20px auto; text-align: center; cursor: pointer; border: none; font-size: 16px; transition: transform 0.2s; }
+        .btn:hover { transform: translateY(-2px); }
+        .module-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 30px 0; }
+        .module-card { border: 1px solid #e2e8f0; padding: 20px; border-radius: 12px; border-top: 4px solid #2563eb; background: #f8fafc; }
+        .module-card h4 { margin-top: 0; color: #2563eb; }
+        @media print {
+            body { padding: 0; max-width: 100%; }
+            .no-print { display: none; }
+            .page-break { page-break-before: always; }
+            .module-card { break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <button class="btn no-print" onclick="window.print()" style="float: right;">🖨️ Save as PDF</button>
+
+    <h1>Comprehensive Operations Manual<br><span style="font-size: 1.2rem; color: #64748b; font-weight: 500;">ACS School & College Management System</span></h1>
+    
+    <div class="intro">
+        <strong>Welcome to the ultimate guide for managing your school!</strong><br><br>
+        This comprehensive manual covers exactly how to utilize every feature within the ACS System. Whether you are adding a single student, collecting complex partial fees, tracking teacher salaries, or printing final report cards, this document provides step-by-step instructions.
+    </div>
+
+    <h2>1. System Login & Security Settings</h2>
+    <p>To access the school's Control Panel, you must be logging in via the encrypted Admin portal.</p>
+    <ol>
+        <li>Navigate to the homepage and click the <strong>Login</strong> button located next to "Inquire Now".</li>
+        <li>Select <strong>Admin</strong> as your login type.</li>
+        <li>Enter your secure username and password.</li>
+        <li><strong>Changing your Password:</strong> Once logged in, look at the bottom left corner of the blue sidebar. Click the <strong>Admin Config</strong> button to securely change your username or password at any time.</li>
+    </ol>
+
+    <div class="page-break"></div>
+
+    <h2>2. Enrolling & Managing Students</h2>
+    <p>The system gives you both single-entry and bulk-entry tools for complete flexibility over student data.</p>
+    
+    <h4>A. Adding a Single Student Manually</h4>
+    <p>When a student walks into the office, use the <strong>Admissions Desk</strong>.</p>
+    <ul>
+        <li>Fill out personal details: <em>Student Name, Father's Name, CNIC, Phone Number, WhatsApp Number, and Address.</em></li>
+        <li>Select the <strong>Class</strong> they are applying for.</li>
+        <li>Click the grey picture circle to upload their photo. If left blank, the system automatically assigns them a professional initial-based avatar.</li>
+        <li>Click <strong>Enroll Student</strong>. The system instantly generates a unique Roll Number (e.g., ACS-2026-045) and an automatic password so the student can log into their Student Portal from home!</li>
+    </ul>
+
+    <h4>B. Bulk Importing via Excel</h4>
+    <p>If you have 100 students to add, manual entry is too slow. Use the Bulk Import tool.</p>
+    <ol>
+        <li>Go to <strong>Classes & Sections</strong> and select the target Class (e.g., Matric).</li>
+        <li>Click the <strong>Export</strong> button first to get the official blank template structure.</li>
+        <li>Fill out the Excel file on your computer.</li>
+        <li>Return to the system and click <strong>Import Excel</strong>. The software safely reads the entire document and instantly registers all 100 students!</li>
+    </ol>
+    <div class="tip"><strong>💡 Tip:</strong> If you upload the same Excel file again with corrections, the system is smart enough to <em>Update</em> the existing students rather than creating duplicates!</div>
+
+    <h4>C. Printing Student ID Cards</h4>
+    <p>Never pay a graphic designer for ID cards again. In the <strong>Classes & Sections</strong> tab, select any class and hit the purple <strong>🪪 ID Cards</strong> button. It creates a perfectly-sized, printable document containing colorful ID cards with the student's photo, Roll Number, Class, Father's CNIC, and school logo. Ready to laminate!</p>
+
+    <div class="page-break"></div>
+
+    <h2>3. Advanced Fee & Accounting System</h2>
+    <p>The Fee Module replaces massive, confusing ledger books with a simple digital interface.</p>
+
+    <h4>A. Configuring Class Defaults</h4>
+    <p>Click the <strong>⚙️ Settings/Defaults</strong> button inside the Fee Management tab. Here you define standard fees for a specific class. For example, you can set "9th Grade" to have exactly 2000 Tuition and 500 Transport. Now, whenever you open a 9th Grader's fee slip, those exact numbers are already filled out.</p>
+
+    <h4>B. Recording Payments & Partial Payments</h4>
+    <ol>
+        <li>Click the target Month badge (e.g., Jan 2026) next to a student's name.</li>
+        <li>The system breaks down the fee into <strong>Tuition, Admission, Annual, Exam, and Transport</strong>.</li>
+        <li><strong>Applying Discounts:</strong> Put any concessions exactly into the green <em>Discount (-)</em> box.</li>
+        <li><strong>Applying Fines:</strong> Put late penalties into the red <em>Late Fine (+)</em> box.</li>
+        <li><strong>Partial Payments:</strong> If the total bill is 4000, but a parent only pays 2000 today, enter '2000' in the <strong>Amount Paid</strong> box. The system automatically turns their badge yellow (Partial) and tracks exactly 2000 as the <em>Balance Due</em> for next time!</li>
+    </ol>
+
+    <h4>C. WhatsApp Reminders & Defaulter Reports</h4>
+    <p>Collecting unpaid fees is critical. The system gives you two tools:</p>
+    <ul>
+        <li><strong>1-Click WhatsApp:</strong> Unpaid students have a green WhatsApp icon in their row. Clicking it immediately opens a pre-written warning message in WhatsApp addressed to the Father's phone number!</li>
+        <li><strong>Defaulter Printout:</strong> Click the red <strong>Print Report</strong> button inside the red statistics box. It generates a single printable page listing every student in that class who owes money, exactly how many months they missed, and their parent's phone number. Hand this to the Class Teacher!</li>
+    </ul>
+
+    <h4>D. Bulk Invoicing / Challans</h4>
+    <p>Click the blue <strong>🖨️ Print</strong> button next to any month header (e.g., "Jan"). It will automatically generate three-part paper fee challans (Bank Copy / School Copy / Student Copy) for the entire class simultaneously.</p>
+
+    <div class="page-break"></div>
+
+    <h2>4. The Expense Tracker & Profit Ledger</h2>
+    <p>While the Fee module tracks revenue, the Expense module tracks money going out. Combined, they calculate the school's actual health.</p>
+
+    <div class="module-grid">
+        <div class="module-card">
+            <h4>Total Revenue</h4>
+            <p>The system automatically scans every single fee record spanning every student in the database. It adds up all the "Amount Paid" values to give you a single, perfectly accurate Gross Revenue number.</p>
+        </div>
+        <div class="module-card">
+            <h4>Total Expenses</h4>
+            <p>Every time you pay an electricity bill or a teacher's salary, click <strong>Log Expense</strong>. Enter the Title, Category (e.g., Utilities, Payroll, Maintenance), and Amount. This strictly tracks your outgoing money.</p>
+        </div>
+    </div>
+    <div class="tip"><strong>💡 The Net Profit:</strong> Located right at the top of the Expense tab. The system constantly subtracts Expenses from Revenue to show you exactly how much money the school has saved in real-time.</div>
+
+    <div class="page-break"></div>
+
+    <h2>5. Gradebook & Report Cards</h2>
+    <p>Managing terminal results has never been easier.</p>
+
+    <h4>A. Configuring Subjects</h4>
+    <p>Inside the Gradebook, click <strong>Manage Subjects / Marking Criteria</strong>. You can add subjects to specific classes, and set Maximum Total Marks (e.g., Biology has 75 max marks, Math has 100 max marks). You can set these individually for 1st Term, Mid Term, and Final Term.</p>
+
+    <h4>B. Entering Marks</h4>
+    <p>Select your Class and your Term. A familiar spreadsheet grid will appear. Simply select a cell and type in the student's marks. If their marks exceed the total allowed, the system visually warns you in red.</p>
+
+    <h4>C. Printing Report Cards</h4>
+    <p>Once all marks are saved, switch the tab over to <strong>Report Cards</strong>.</p>
+    <ol>
+        <li>Click on a student's name, then click <strong>Generate Report</strong>.</li>
+        <li>The system automatically calculates their Percentage, applies the correct Academic Grade (A+, A, B, C, F), and renders a beautiful, structured transcript.</li>
+        <li>The transcript includes dedicated Signature Sections for the Class Teacher, Principal, and Parents. Hand this directly to the parent during PTMs!</li>
+    </ol>
+
+    <h2>6. Attendance Management</h2>
+    <p>Fast, reliable digital attendance tracking replacing paper registers.</p>
+    <ul>
+        <li>Select the date via the calendar.</li>
+        <li>The roster for the selected class appears. Click the status circle: <strong>P</strong> (Present / Green), <strong>A</strong> (Absent / Red), <strong>L</strong> (Late / Yellow), or <strong>Lv</strong> (Leave / Blue).</li>
+        <li>The system auto-calculates an Attendance Percentage for every student, which is then legally printed onto their Report Cards at the end of the term.</li>
+    </ul>
+
+    <div class="page-break"></div>
+
+    <h2>7. Website Content Management (CMS)</h2>
+    <p>This software controls not just internal data, but also the public-facing school website.</p>
+
+    <div class="module-grid">
+        <div class="module-card">
+            <h4>Noticeboard (Announcements)</h4>
+            <p>Need to announce a sudden holiday? Go to the <strong>Noticeboard</strong> tab, write the alert, and save it. It will instantly appear globally on the school's public homepage for all parents and students to see.</p>
+        </div>
+        <div class="module-card">
+            <h4>Faculty Profiles</h4>
+            <p>Did a new teacher join? Go to the <strong>Faculty</strong> tab. Add their Name, Photo, and degree. Their profile instantly appears on the public "Our Teachers" website page.</p>
+        </div>
+    </div>
+
+    <ul>
+        <li><strong>Blog Posts:</strong> Use the <strong>Website Blog</strong> tab to write articles about school trips, sports days, or academic achievements. You can attach cover photos to make the post visually striking alongside the read-time counter on the public website.</li>
+        <li><strong>School Facilities:</strong> Highlight your Computer Lab, Library, and Science Labs via the <strong>School Facilities</strong> tab. Add photos and descriptions to attract admissions!</li>
+    </ul>
+
+    <div class="intro" style="border-color: #f59e0b; background: #fffbeb;">
+        <strong>Final Note on Data Safety:</strong> Every time you make a change, the system securely saves it to a cloud database (Supabase). Even if your computer crashes or loses power, zero data is lost. Furthermore, you can download all internal tables as Excel files directly into your personal computer safely whenever you want!
+    </div>
+    
+    <div style="text-align: center; margin-top: 40px; font-size: 0.9rem; color: #94a3b8;">
+        © 2026 ACS School & College Software • Comprehensive Operations Manual
+    </div>
+</body>
+</html>
